@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "chmod +x node_modules/.bin/tailwindcss",
-    "build": "tailwindcss -i ./style.css -o ./output.css --watch"
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "author": "",
   "license": "ISC",
